@@ -72,11 +72,23 @@ The core implementation is primarily located in the following key files:
 
 If you use AdaSpec in your research, please cite the following paper.
 ```bibtex
-@article{adaspec,
-  title={Specserve: Efficient and slo-aware large language model serving with adaptive speculative decoding},
-  author={Huang, Kaiyu and Wu, Hao and Shi, Zhubo and Zou, Han and Yu, Minchen and Shi, Qingjiang},
-  journal={arXiv preprint arXiv:2503.05096},
-  year={2025}
+@inproceedings{10.1145/3772052.3772239,
+author = {Huang, Kaiyu and Wu, Hao and Shi, Zhubo and Zou, Han and Yu, Minchen and Shi, Qingjiang},
+title = {AdaSpec: Adaptive Speculative Decoding for Fast, SLO-Aware Large Language Model Serving},
+year = {2026},
+isbn = {9798400722769},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3772052.3772239},
+doi = {10.1145/3772052.3772239},
+abstract = {Cloud-based Large Language Model (LLM) services often face challenges in achieving low inference latency and meeting Service Level Objectives (SLOs) under dynamic request patterns. Speculative decoding, which exploits lightweight models for drafting and LLMs for verification, has emerged as a compelling technique to accelerate LLM inference. However, existing speculative decoding solutions often fail to adapt to fluctuating workloads and dynamic system environments, resulting in impaired performance and SLO violations. In this paper, we introduce AdaSpec, an efficient LLM inference system that dynamically adjusts speculative strategies according to real-time request loads and system configurations. AdaSpec proposes a theoretical model to analyze and predict the efficiency of speculative strategies across diverse scenarios. Additionally, it implements intelligent drafting and verification algorithms to maximize performance while ensuring high SLO attainment. Experimental results on real-world LLM service traces demonstrate that AdaSpec consistently meets SLOs and achieves substantial performance improvements, delivering up to 66\% speedup compared to state-of-the-art speculative inference systems. The source code is publicly available at https://github.com/cerebellumking/AdaSpec},
+booktitle = {Proceedings of the 2025 ACM Symposium on Cloud Computing},
+pages = {361–374},
+numpages = {14},
+keywords = {large language models, machine learning inference},
+location = {
+},
+series = {SoCC '25}
 }
 ```
 
